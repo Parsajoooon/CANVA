@@ -1,0 +1,53 @@
+.instagram-story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-button:hover {
+  background-color: #6d28d9;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.story-box {
+  width: 1080px;
+  height: 1920px;
+  background-color: #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.uploaded-file {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

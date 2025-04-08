@@ -1,0 +1,100 @@
+.project-type-page-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.loading-message,
+.error-message,
+.no-files {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.files-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.file-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.file-card:hover {
+  transform: scale(1.05);
+}
+
+/* استایل برای پیش‌نمایش فایل */
+.file-preview-container {
+  margin-bottom: 10px;
+}
+
+.file-preview {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.pdf-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.pdf-preview p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.pdf-preview a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pdf-preview a:hover {
+  text-decoration: underline;
+}
+
+.file-preview-placeholder {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.file-preview-placeholder p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.user-profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.username,
+.file-name,
+.project-name,
+.upload-date {
+  margin: 5px 0;
+  font-size: 1rem;
+}
