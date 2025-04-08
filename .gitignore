@@ -1,3 +1,9 @@
 node_modules/
 .env
 *.log
+<<<<<<< HEAD
+=======
+AppData/
+*.ini
+NTUSER.*
+>>>>>>> 67dcc19bcd275000e1aff878acd8edb109d42dec
