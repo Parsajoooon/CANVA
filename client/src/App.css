@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'Doran';
+  src: url('./fonts/Doran-Regular.ttf') format('truetype'); /* اصلاح مسیر */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+
+.App {
+  direction: rtl;
+  text-align: right;
+  min-height: 100vh;
+  background-color: #F9FAFB;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Vazir', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Doran', sans-serif;
+  color: #111827;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 350px;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.App.login .app-container,
+.App.terms .app-container {
+  justify-content: center;
+}
+
+.form-card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 350px;
+  z-index: 1;
+}
+
+h2 {
+  font-family: 'Doran', sans-serif;
+  color: #111827;
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 12px;
+  padding: 0 8px;
+  text-align: right;
+}
+
+label {
+  display: block;
+  color: #4B5563;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background-color: #F9FAFB;
+  text-align: right;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #F97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+  outline: none;
+}
+
+input::placeholder {
+  color: #9CA3AF;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #F97316;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #EA580C;
+}
+
+.error {
+  color: #F87171;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.success {
+  color: #10B981;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.forgot-password {
+  color: #F97316;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  text-align: center;
+  display: block;
+}
+
+.forgot-password:hover {
+  color: #EA580C;
+}
+
+.switch-text {
+  margin-top: 12px;
+  color: #111827;
+  font-size: 0.75rem;
+}
+
+.switch {
+  color: #F97316;
+  cursor: pointer;
+}
+
+.switch:hover {
+  color: #EA580C;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  padding: 0 8px;
+  text-align: right;
+}
+
+.terms input {
+  width: auto;
+}
+
+.terms-link {
+  color: #F97316;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  color: #EA580C;
+}
+
+.terms-page {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+}
+
+/* استایل‌های صفحه لندینگ */
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-box {
+  background-color: #6a4c9c;
+  color: white;
+  width: calc(200px * 16 / 9);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 12px;
+}

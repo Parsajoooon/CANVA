@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Doran';
+  src: url('./fonts/Doran-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.profile-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #F97316;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Doran', sans-serif !important;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  background: linear-gradient(to left, #F97316, #8B5CF6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.title p {
+  font-family: 'Doran', sans-serif !important;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.slider-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow.left {
+  transform: rotate(180deg);
+}
+
+.slider-arrow.right {
+  transform: rotate(180deg);
+}
+
+.slider-arrow:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.slider-arrow:hover:not(:disabled) {
+  background-color: #ea580c;
+}
+
+.box-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box {
+  min-width: 200px;
+  height: 300px;
+  margin: 0 10px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ddd; /* رنگ پیش‌فرض */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* انیمیشن برای رنگ و سایه */
+}
+
+.box:hover {
+  background-color: #ccc; /* تغییر رنگ پس‌زمینه موقع هاور */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* اضافه کردن سایه */
+}
+
+.box-text {
+  font-family: 'Doran', sans-serif !important;
+}
